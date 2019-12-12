@@ -74,4 +74,7 @@ void setup() {
 
 void loop() {
   ArduinoOTA.handle();
+  Serial.print("IP address: ");
+  Serial.println(WiFi.localIP());
+  delay(5000);
 }
