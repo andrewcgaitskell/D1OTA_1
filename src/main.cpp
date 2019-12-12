@@ -1,5 +1,10 @@
 #include <iostream>
-#include "secrets.h" // Insert contents of add.h at this point.  Note use of double quotes here.
+
+#include "secrets.h"
+
+char ssid[] = SECRET_SSID;   // your network SSID (name) 
+char pass[] = SECRET_PASS;   // your network password
+
 
 #include <ESP8266WiFi.h>
 #include <ESP8266mDNS.h>
