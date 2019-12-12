@@ -1,15 +1,10 @@
+#include <iostream>
+#include "secrets.h" // Insert contents of add.h at this point.  Note use of double quotes here.
+
 #include <ESP8266WiFi.h>
 #include <ESP8266mDNS.h>
 #include <WiFiUdp.h>
 #include <ArduinoOTA.h>
-
-#ifndef STASSID
-#define STASSID "your-ssid"
-#define STAPSK  "your-password"
-#endif
-
-const char* ssid = STASSID;
-const char* password = STAPSK;
 
 void setup() {
   Serial.begin(115200);
