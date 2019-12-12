@@ -3,7 +3,7 @@
 #include "secrets.h"
 
 char ssid[] = SECRET_SSID;   // your network SSID (name) 
-char pass[] = SECRET_PASS;   // your network password
+char password[] = SECRET_PASS;   // your network password
 
 
 #include <ESP8266WiFi.h>
