@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="D1OTA_1" />
+		<Option makefile_is_custom="1" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<MakeCommands>
+			<Build command="/usr/local/bin/platformio -f -c codeblocks run" />
+			<CompileFile command="/usr/local/bin/platformio -f -c codeblocks run" />
+			<Clean command="/usr/local/bin/platformio -f -c codeblocks run -t clean" />
+			<DistClean command="/usr/local/bin/platformio -f -c codeblocks run -t clean" />
+			<AskRebuildNeeded command="1" />
+			<SilentBuild command="/usr/local/bin/platformio -f -c codeblocks run &gt; $(CMD_NULL)" />
+		</MakeCommands>
+		<Build>
+			<Target title="Debug">
+				<Option type="4" />
+				<Option compiler="gcc" />
+				<Option parameters="-f -c codeblocks run -t upload" />
+				<Option host_application="/usr/local/bin/platformio" />
+				<Option run_host_application_in_terminal="1" />
+				<Option use_console_runner="0" />
+				<MakeCommands>
+					<Build command="/usr/local/bin/platformio -f -c codeblocks run" />
+					<CompileFile command="/usr/local/bin/platformio -f -c codeblocks run" />
+					<Clean command="/usr/local/bin/platformio -f -c codeblocks run -t clean" />
+					<DistClean command="/usr/local/bin/platformio -f -c codeblocks run -t clean" />
+					<AskRebuildNeeded command="1" />
+					<SilentBuild command="/usr/local/bin/platformio -f -c codeblocks run &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="Release">
+				<Option type="4" />
+				<Option compiler="gcc" />
+				<Option parameters="-f -c codeblocks run -t upload" />
+				<Option host_application="/usr/local/bin/platformio" />
+				<Option run_host_application_in_terminal="1" />
+				<Option use_console_runner="0" />
+				<MakeCommands>
+					<Build command="/usr/local/bin/platformio -f -c codeblocks run" />
+					<CompileFile command="/usr/local/bin/platformio -f -c codeblocks run" />
+					<Clean command="/usr/local/bin/platformio -f -c codeblocks run -t clean" />
+					<DistClean command="/usr/local/bin/platformio -f -c codeblocks run -t clean" />
+					<AskRebuildNeeded command="1" />
+					<SilentBuild command="/usr/local/bin/platformio -f -c codeblocks run &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-DPLATFORMIO=40100"/>
+			<Add option="-DESP8266"/>
+			<Add option="-DARDUINO_ARCH_ESP8266"/>
+			<Add option="-DARDUINO_ESP8266_WEMOS_D1MINI"/>
+			<Add option="-DF_CPU=80000000L"/>
+			<Add option="-D__ets__"/>
+			<Add option="-DICACHE_FLASH"/>
+			<Add option="-DARDUINO=10805"/>
+			<Add option="-DARDUINO_BOARD=&quot;PLATFORMIO_D1_MINI&quot;"/>
+			<Add option="-DFLASHMODE_DIO"/>
+			<Add option="-DLWIP_OPEN_SRC"/>
+			<Add option="-DNONOSDK22x_190703=1"/>
+			<Add option="-DTCP_MSS=536"/>
+			<Add option="-DLWIP_FEATURES=1"/>
+			<Add option="-DLWIP_IPV6=0"/>
+			<Add option="-DVTABLES_IN_FLASH"/>
+			<Add directory="/home/pi/D1OTA_1/include"/>
+			<Add directory="/home/pi/D1OTA_1/src"/>
+			<Add directory="/home/pi/.platformio/packages/framework-arduinoespressif8266/tools/sdk/include"/>
+			<Add directory="/home/pi/.platformio/packages/framework-arduinoespressif8266/tools/sdk/libc/xtensa-lx106-elf/include"/>
+			<Add directory="/home/pi/.platformio/packages/framework-arduinoespressif8266/cores/esp8266"/>
+			<Add directory="/home/pi/.platformio/packages/framework-arduinoespressif8266/tools/sdk/lwip2/include"/>
+			<Add directory="/home/pi/.platformio/packages/framework-arduinoespressif8266/variants/d1_mini"/>
+			<Add directory="/home/pi/.platformio/packages/framework-arduinoespressif8266/libraries/ArduinoOTA"/>
+			<Add directory="/home/pi/.platformio/packages/framework-arduinoespressif8266/libraries/DNSServer/src"/>
+			<Add directory="/home/pi/.platformio/packages/framework-arduinoespressif8266/libraries/EEPROM"/>
+			<Add directory="/home/pi/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266AVRISP/src"/>
+			<Add directory="/home/pi/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266HTTPClient/src"/>
+			<Add directory="/home/pi/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266HTTPUpdateServer/src"/>
+			<Add directory="/home/pi/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266LLMNR"/>
+			<Add directory="/home/pi/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266NetBIOS"/>
+			<Add directory="/home/pi/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266SSDP"/>
+			<Add directory="/home/pi/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266SdFat/src"/>
+			<Add directory="/home/pi/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266WebServer/src"/>
+			<Add directory="/home/pi/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266WiFi/src"/>
+			<Add directory="/home/pi/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266WiFiMesh/src"/>
+			<Add directory="/home/pi/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266httpUpdate/src"/>
+			<Add directory="/home/pi/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266mDNS/src"/>
+			<Add directory="/home/pi/.platformio/packages/framework-arduinoespressif8266/libraries/Ethernet/src"/>
+			<Add directory="/home/pi/.platformio/packages/framework-arduinoespressif8266/libraries/GDBStub/src"/>
+			<Add directory="/home/pi/.platformio/packages/framework-arduinoespressif8266/libraries/Hash/src"/>
+			<Add directory="/home/pi/.platformio/packages/framework-arduinoespressif8266/libraries/LittleFS/src"/>
+			<Add directory="/home/pi/.platformio/packages/framework-arduinoespressif8266/libraries/SD/src"/>
+			<Add directory="/home/pi/.platformio/packages/framework-arduinoespressif8266/libraries/SDFS/src"/>
+			<Add directory="/home/pi/.platformio/packages/framework-arduinoespressif8266/libraries/SPI"/>
+			<Add directory="/home/pi/.platformio/packages/framework-arduinoespressif8266/libraries/SPISlave/src"/>
+			<Add directory="/home/pi/.platformio/packages/framework-arduinoespressif8266/libraries/Servo/src"/>
+			<Add directory="/home/pi/.platformio/packages/framework-arduinoespressif8266/libraries/SoftwareSerial/src"/>
+			<Add directory="/home/pi/.platformio/packages/framework-arduinoespressif8266/libraries/TFT_Touch_Shield_V2"/>
+			<Add directory="/home/pi/.platformio/packages/framework-arduinoespressif8266/libraries/Ticker/src"/>
+			<Add directory="/home/pi/.platformio/packages/framework-arduinoespressif8266/libraries/Wire"/>
+			<Add directory="/home/pi/.platformio/packages/framework-arduinoespressif8266/libraries/esp8266/src"/>
+			<Add directory="/home/pi/.platformio/packages/toolchain-xtensa/xtensa-lx106-elf/include"/>
+			<Add directory="/home/pi/.platformio/packages/toolchain-xtensa/xtensa-lx106-elf/include/c++/4.8.2"/>
+			<Add directory="/home/pi/.platformio/packages/toolchain-xtensa/xtensa-lx106-elf/include/c++/4.8.2/xtensa-lx106-elf"/>
+			<Add directory="/home/pi/.platformio/packages/toolchain-xtensa/lib/gcc/xtensa-lx106-elf/4.8.2/include"/>
+			<Add directory="/home/pi/.platformio/packages/toolchain-xtensa/lib/gcc/xtensa-lx106-elf/4.8.2/include-fixed"/>
+			<Add directory="/home/pi/.platformio/packages/tool-unity"/>
+		</Compiler>
+		<Unit filename="platformio.ini" />
+	</Project>
+</CodeBlocks_project_file>
