@@ -1,6 +1,6 @@
 #include <iostream>
 
-#include "secrets.h"
+#include "lib/secrets.h"
 
 char ssid[] = SECRET_SSID;   // your network SSID (name) 
 char pass[] = SECRET_PASS;   // your network password
